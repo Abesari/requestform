@@ -39,13 +39,13 @@ public class ViewPending extends HttpServlet {
 		int user= Integer.parseInt(session.getAttribute("emp_id").toString());
 		ArrayList<Request> list= s.viewPending(user);
 		
-		String resp = (new ObjectMapper()).writeValueAsString(list);
+		String resp = (new ObjectMapper())
+				.writeValueAsString(list);
+
 		response.getWriter().write(resp);
 		
 		
-		//response.getWriter().write(om.writeValueAsString(s.viewResolved(user)));
-		//s.viewResolved(user)
-		//response.getWriter().write((new ObjectMapper()).writeValueAsString(u));
+		
 		
 	
 	}

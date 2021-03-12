@@ -1,0 +1,106 @@
+ 
+ <html lang="en">
+	 <head>
+		 <link rel="stylesheet" type="text/css"  href="style.css">
+	 </head>
+
+	 <h1>Request Form</h1>
+	 <body>
+		<form style="padding-top: 20px;margin-top:10px" method="POST" action="ReimbursmentRequest" class="form-horizontal">
+			<div class="form-group">
+			 
+			</div>
+			<div class="form-group">
+			  <label for="amount" class="control-label col-sm-3">Amount</label>
+			  <div class="col-sm-9">
+				Enter Requested Amount : <input type="text" name = "amt"><br>
+                Enter the Year of your purchase : <input type= "text" name ="year"><br>
+                Enter the Month of your purchase : <input type= "text" name ="month"><br>
+                Enter the Day of your purchase : <input type= "text" name ="day"><br>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label for="description" class="control-label col-sm-3">Description</label>
+			  <div class="col-sm-9">
+				<textarea name="description"  class="form-control"></textarea>
+			  </div>
+			</div>
+		  <button type="submit" class="btn btn-default">Submit Request</button>
+		</form>
+		<div>
+
+		<form action="logout" method="get">
+		<input type="submit" value="logout"/>
+		</form>
+
+			<div class="profiles">
+				<h2>View Your Pending Reimbursment Request</h2>
+				<button type="button" class="btn btn-primary" id="pending">View pending</button>
+				<p id= "viewpending"></p>
+				</div>
+				<br><br><br><br>
+	
+	
+			<div class="profiles">
+					<h2>View Your Resolved Reimbursments Request</h2>
+					<button type="button" class="btn btn-primary" id="resolved">View resolved</button>
+					<p ></p>
+					</div>
+					<div>
+						<p id="viewResolved"></p>
+					</div>
+				<br><br><br><br>
+				
+			<div class="profiles">
+				<h2>View Your Information</h2>
+				<button type="button" class="btn btn-primary" id="yourInfo">View Your Info</button>
+				<div>
+					<p id="viewInfo"></p>
+				</div>
+			   
+				</div>
+				<br><br><br><br>
+	
+	
+	
+
+		
+
+		<div class="profiles">
+        <h2>Respond to Pending Request</h2>
+        <form action="ManageRequest" method="POST">
+                Enter Request Id : <input type="text" name = "reqnum"><br>
+                Select your choice:<br> <input type= "radio" name ="nope" value="DENIED"><input type= "radio" name ="yes" value="APPROVED"><br>
+                <input type= "text" name ="month">
+                <input type="submit">
+                
+
+        </form>
+		</div>
+		 <div class="profiles">
+                    <h2>View All Employee's Information</h2>
+                    <div class="vanish">
+                    <button type="button" class="btn btn-primary" id="seeAll">View resolved</button>
+                    </div>
+                    <p ></p>
+                </div>
+                <div>
+                    <p id="viewAll"></p>
+                </div>
+            <br><br><br><br>
+
+            <div class="profiles">
+                    <h2>View All Pending Requests</h2>
+                    <button type="button" class="btn btn-primary" id="Everypending">View pending</button>
+                    <p id= "Allpending"></p>
+                    </div>
+                    <br><br><br><br>
+</div>
+		
+		
+		
+		
+		<script src="Scripts.js"></script>
+	 </body>
+ </html>
+ 

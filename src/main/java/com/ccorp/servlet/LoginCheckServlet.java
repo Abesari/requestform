@@ -29,7 +29,7 @@ public class LoginCheckServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("tf u on about");
+		System.out.println("Good job for logging in!");
 		request.getRequestDispatcher("ccorp.html").forward(request, response);
 	}
 	
