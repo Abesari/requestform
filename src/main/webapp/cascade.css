@@ -6,7 +6,7 @@ body{
     height: 400px;
 }
 .form-group{
-    background: #8b60ad;
+    background: rgb(235, 221, 221);
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
