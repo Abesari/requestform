@@ -1,15 +1,12 @@
  
  <html lang="en">
 	 <head>
-		 <link rel="stylesheet" type="text/css"  href="style.css">
+		 <link rel="stylesheet" type="text/css"  href="cascade.css">
 	 </head>
 
 	 <h1>Request Form</h1>
 	 <body>
 		<form style="padding-top: 20px;margin-top:10px" method="POST" action="ReimbursmentRequest" class="form-horizontal">
-			<div class="form-group">
-			 
-			</div>
 			<div class="form-group">
 			  <label for="amount" class="control-label col-sm-3">Amount</label>
 			  <div class="col-sm-9">
@@ -17,12 +14,6 @@
                 Enter the Year of your purchase : <input type= "text" name ="year"><br>
                 Enter the Month of your purchase : <input type= "text" name ="month"><br>
                 Enter the Day of your purchase : <input type= "text" name ="day"><br>
-			  </div>
-			</div>
-			<div class="form-group">
-			  <label for="description" class="control-label col-sm-3">Description</label>
-			  <div class="col-sm-9">
-				<textarea name="description"  class="form-control"></textarea>
 			  </div>
 			</div>
 		  <button type="submit" class="btn btn-default">Submit Request</button>
@@ -47,7 +38,7 @@
 					<p ></p>
 					</div>
 					<div>
-						<p id="viewResolved"></p>
+						<p id="ViewResolved"></p>
 					</div>
 				<br><br><br><br>
 				
@@ -70,8 +61,8 @@
         <h2>Respond to Pending Request</h2>
         <form action="ManageRequest" method="POST">
                 Enter Request Id : <input type="text" name = "reqnum"><br>
-                Select your choice:<br> <input type= "radio" name ="nope" value="DENIED"><input type= "radio" name ="yes" value="APPROVED"><br>
-                <input type= "text" name ="month">
+                Select your choice:<br> <input type= "radio" name ="yes" value="APPROVED"><br>
+                <input type= "text" name ="response">
                 <input type="submit">
                 
 
